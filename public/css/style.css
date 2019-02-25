@@ -1,0 +1,19 @@
+.question {
+    padding: 35px;
+}
+
+.instr {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgb(204, 214, 224);
+}
+
+#last-question {
+    padding-bottom: 25px;
+}
+
+#submit {
+    margin-left: 83%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}

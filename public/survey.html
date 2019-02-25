@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+
+    <!-- Link to BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Link to JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Title -->
+        <h1 class="text-center">Friend Finder</h1>
+
+        <!-- Form starts here -->
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Name (Required)</label>
+                <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="photoURL">Photo URL (Required)</label>
+                <input type="photoURL" class="form-control" id="photo" placeholder="Enter Your Photo URL" required>
+            </div>
+
+
+            <!-- Instructions -->
+            <section class="instr text-center">
+                <h2>Instructions:</h2>
+                <h4>Answer each question by sliding the selector between Strongly Disagree or Strongly Agree.</h4>
+            </section>
+
+            <!-- Questions start here -->
+            <section class="question">
+
+                <h2>Question 1:</h2>
+                <h4>If possible, I would go back in time to change one thing about myself.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-1" class="slider">
+
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 2:</h2>
+                <h4>I like taking risks and and following my instincts.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-2" class="slider">
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 3:</h2>
+                <h4>I value friends and family over fame and fortune.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-3" class="slider">
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 4:</h2>
+                <h4>I feel more energetic than tired after spending time with my friends.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-4" class="slider">
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 5:</h2>
+                <h4>I prefer a pleasant lunch over a fancy dinner for a first date.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-5" class="slider">
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 6:</h2>
+                <h4>I would rather lie if the truth meant hurting someone's feelings.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-6" class="slider">
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 7:</h2>
+                <h4>I prefer being the leader in most situations.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-7" class="slider">
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 8:</h2>
+                <h4>I enjoy being the center of attention.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-8" class="slider">
+
+
+            </section>
+
+            <section class="question">
+
+                <h2>Question 9:</h2>
+                <h4>I prefer relaxing at home over camping out in the wilderness for the weekend.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-9" class="slider">
+
+            </section>
+
+            <section class="question" id="last-question">
+
+                <h2>Question 10:</h2>
+                <h4>I would rather attend a party than host one.</h4>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-left" id="s-agree" for="q-1">Strongly Disagree</p>
+                    </div>
+                    <div class="col text-center">
+                        <p class="text-center" id="neutral" for="q-1">Neutral</p>
+                    </div>
+                    <div class="col">
+                        <p class="text-right" id="s-agree" for="q-1">Strongly Agree</p>
+                    </div>
+                </div>
+                <input type="range" class="custom-range" min="1" max="5" id="q-10" class="slider">
+
+            </section>
+
+            <button type="button" id="submit" class="btn btn-primary btn-lg text-right" data-toggle="modal"
+                data-target="#matchModal">Submit Answers</button>
+        </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your Match:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center" id="modalBody">
+                        <!-- <h2 id="matchName"></h2>
+                        <img src="" alt="Match Photo"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <img src="" alt="">
+
+</body>
+
+<script src="../../server.js"></script>
+
+<script>
+
+    var matches = [];
+
+    // Function that runs when Submit button is clicked.
+    $("#submit").on("click", (function () {
+
+        // Grabs the value the user's input
+        var userName = $("#name").val().trim();
+        var userPhoto = $("#photo").val().trim();
+        var userScores = [
+            parseInt($("#q-1").val()),
+            parseInt($("#q-2").val()),
+            parseInt($("#q-3").val()),
+            parseInt($("#q-4").val()),
+            parseInt($("#q-5").val()),
+            parseInt($("#q-6").val()),
+            parseInt($("#q-7").val()),
+            parseInt($("#q-8").val()),
+            parseInt($("#q-9").val()),
+            parseInt($("#q-10").val())
+        ];
+
+        // Turns all user values into an object
+        var newFriend = {
+            "name": userName,
+            "photo": userPhoto,
+            "scores": userScores
+        };
+
+        console.log(newFriend);
+        match(userScores);
+
+        matches = [];
+
+
+    }));
+
+    function match(userScores) {
+
+        $.ajax({ url: "/api/friends", method: "GET" })
+            .then(function (friends) {
+                // console.log(friends);
+
+                // Create algorithm to find absolute total differences in user's array vs friends array.
+                for (var i = 0; i < friends.length; i++) {
+                    totalDiff(userScores, friends[i].scores);
+                }
+
+                // // Add user's match on modal (smallest difference).
+                var lowestDiff = Math.min(...matches);
+                var matchIndex = matches.indexOf(lowestDiff);
+
+                console.log(friends[matchIndex]);
+
+                var friendMatch = `<h2>` + friends[matchIndex].name + `</h2> <br>
+                <img src="` + friends[matchIndex].photo + `" alt="Match">`
+                $(friendMatch).appendTo("#modalBody");
+                $('#matchModal').modal('toggle');
+
+            });
+        
+            // Do a clear all function here.
+
+    }
+
+    function totalDiff(arr1, arr2) {
+
+        var x = arr1.map(function (item, index) {
+            // In this case item correspond to currentValue of array a, 
+            // using index to get value from array b
+            return Math.abs(item - arr2[index]);
+        })
+
+        var total = x.reduce(add);
+        function add(accumulator, a) {
+            return accumulator + a;
+        }
+
+        matches.push(total);
+        console.log(matches);
+
+
+    };
+
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
